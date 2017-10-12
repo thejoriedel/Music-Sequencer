@@ -4,7 +4,7 @@
   "description": "My Project",
   "main": "index.js",
   "scripts": {
-    "compile": "webpack",
+    "compile": "webpack -w",
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,8 +17,11 @@
     "babel-preset-latest": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "express": "^4.16.2",
+    "file-loader": "^1.1.5",
+    "interface": "^1.2.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "tone": "^0.11.11",
     "webpack": "^3.6.0",
     "webpack-dev-middleware": "^1.12.0"
   }

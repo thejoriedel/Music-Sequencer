@@ -1,4 +1,4 @@
-Solo Project
+Solo Project - Music Sequencer
 ----
 Welcome!
 

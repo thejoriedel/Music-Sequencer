@@ -1,7 +1,7 @@
 const express = require('express');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 const webpack = require('webpack');
-const webpackConfig = require('./webpack.config.js');
+const webpackConfig = require('./../webpack.config.js');
 const app = express();
  
 const compiler = webpack(webpackConfig);
@@ -18,6 +18,16 @@ app.use(webpackDevMiddleware(compiler, {
   historyApiFallback: true,
 }));
  
+
+//finish server routes
+//add mongodb
+app.get('/', (req, res) => {
+  //will render ./../www/index.html
+})
+//app.post ==> pattern data
+
+
+
 const server = app.listen(3000, function() {
   const host = server.address().address;
   const port = server.address().port;
