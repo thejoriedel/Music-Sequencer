@@ -6,7 +6,7 @@ const app = express();
  
 const compiler = webpack(webpackConfig);
  
-app.use(express.static(__dirname + '/www'));
+app.use(express.static(__dirname + './../www'));
  
 app.use(webpackDevMiddleware(compiler, {
   hot: true,
@@ -21,9 +21,9 @@ app.use(webpackDevMiddleware(compiler, {
 
 //finish server routes
 //add mongodb
-app.get('/', (req, res) => {
-  //will render ./../www/index.html
-})
+// app.get('/', (req, res) => {
+//   //will render ./../www/index.html
+// })
 //app.post ==> pattern data
 
 
