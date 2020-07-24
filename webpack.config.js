@@ -7,10 +7,11 @@ module.exports = {
  ],
  output: {
    path: path.join(__dirname, 'www'),
-   filename: 'bundle.js',
+   filename: '[name].bundle.js',
+   chunkFilename: '[name].bundle.js'
  },
  module: {
-   loaders: [
+   rules: [
     { test: /\.(jsx|js)?$/,
       loader: 'babel-loader',
       exclude: /node_modules/,
